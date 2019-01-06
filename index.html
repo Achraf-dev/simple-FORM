@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="designcription" content="welcome to my web seite"><!--hetdi designcription elli tal9aha ki tji tlawej fi google-->
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+       <!--<i class="fa fa-home"></i>  --> 
+
+<form name="register" >
+
+<fieldset><!--fildset : bech ya3mel kima el mouraba3 n7otou fih echay elli 7ajetna bih-->
+    <legend>personal info</legend><!--legend : hia 3onwen el fildset-->
+
+
+<label>Username </label>
+<input type="text" name="username" maxlength="10"><!--maxlength , el user maynajam ydakhel ken 10 7rouf -->
+<br>
+
+<label>Password </label>
+ <input type="password" name="password"><!--type password: bech ki tekteb yechefou nkot w mayoth'hrouch-->  
+<br>
+<label>Your message</label><br>
+
+<textarea class=""></textarea>
+<br>
+<label>upload your cv  </label>
+<input type="file"><!--ykhalik tekhtar file mel computer elli 3andek-->
+<br>
+
+<input type="checkbox">
+<label>remeber me</label>
+</fieldset>
+
+<fieldset>
+    <legend>your favourite</legend>
+<label>choose your browser</label><br>
+<input type="radio" name="browser" value="chrome">google chrome<br>
+<input type="radio" name="browser" value="firefox"> mozilla firefox<br>
+<input type="radio" name="browser" value="safari">  safari<br>
+<br>
+
+<label>choose your mobile</label><br>
+<input type="radio" name="mobile" value="iphone">iphone<br><!--fetype radio , itha nbadel name nwali enajem nekhtar akther men haja fi nafs el majmou3a, ki yabdew lkol fard name manajam nekhtar ken 7aja wa7da-->
+<input type="radio" name="mobile" value="samsung"> samsung<br>
+<input type="radio" name="mobile" value="sony">  sony<br>
+</fieldset>
+
+<fieldset>
+    <legend>send option</legend>
+
+<!--select na3mlouha biha dropdown liste-->
+    <select name="time" ><!--name: 3andha 3ale9a bel programation bech ki tekhtar haja temchi lel data base -->
+                                <!--multiple : ma3neha tnajem tekhtar akther men haja fel drop down / size : ba3d mat7adedha twali drop down tthahrelna eles options 7asb size elli 7adedneh-->                         
+                                <!--disabled: ywali el user ma3adech ynajem yekhtar , y9oul el 9ayel 3lech? najem mba3d bel js mankhalih ynajem yekhtar ella may3abi el felder elli ena hajti bihom-->
+
+        <optgroup label="majmou3a 1"><!--bech matkhalich drop dawn lkolha wra b3ath'ha , tfara9hom bel optgroup, w ta3ti esm lel group bel label-->
+          <option value="1" >jetzt</option><!--value hia el 9ima elli tetb3ath lel data base, maychoufhech el user-->
+          <option value="2">morgen</option>                      
+          <option selected>nach eine woche</option> <!--selected : ki n7ot'ha fi ay option twali tatla3 hia option selecté par default(ken na7iha men hne twali awel option "jetzt " tokhrej louwla-->
+                                                   <!--najmou bel fazet selected mathalan law ken el user men almania yekhtar lebled almania 7asb el ip elli dekhel menha und soweiter ..--> 
+   </optgroup>
+
+   <optgroup label="majmou3a 2">
+            <option value="3">jahr</option>
+              <option value="4">10 jahre</option>                                                           
+                <option value="5">20 jahare</option>                                   
+                     </optgroup>                    
+   
+       </select>                                         
+
+<input type="hidden" value="test"><!--hethi matothherch 3andha 3ale9a bel programation-->
+<input type="button" name="save hallo" value="say Hallo" onclick="sayHallo()">
+<input type="submit" value="sign up" >
+<input type="reset" value="Restore Default">
+<input type="image" src="http://placehold.it/100/100" alt="image"><!--ta3ref el user win 3mal klik bethabt, tkhayel el user bech yekhtar blasa fi tayara , win houwa 3mal klik enajem ena na3rfou ena korsi khtar-->
+</fieldset>
+
+</form>
+
+<a href="#top" title="zum Seitenanfang">
+   <i class="fas fa-angle-double-up"></i></a><!--3malna link(#top)besm id bech ytala3na lih ki nenzlou 3lih bech -->
+                                            <!--lehne ma3ana 7ata id esmou top , el fekra sere9ha men page el prof elli fiha el kharita-->
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/costom.js"></script>
+</body>
+</html>
